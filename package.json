@@ -4,7 +4,7 @@
   "description": "Event Emitter wrapper for Web Sockets",
   "main": "index.js",
   "scripts": {
-    "build": "browserify -e source.js -t babelify -o index.js"
+    "build": "browserify --standalone bogo -e source.js -t babelify -o index.js"
   },
   "repository": {
     "type": "git",
