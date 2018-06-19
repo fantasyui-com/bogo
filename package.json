@@ -1,0 +1,25 @@
+{
+  "name": "bogo",
+  "version": "1.0.0",
+  "description": "Event Emitter wrapper for Web Sockets",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify -e source.js -t babelify -o index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fantasyui-com/bogo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fantasyui-com/bogo/issues"
+  },
+  "homepage": "https://github.com/fantasyui-com/bogo#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babelify": "^8.0.0"
+  }
+}
