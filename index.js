@@ -46,6 +46,8 @@ module.exports = function (_ref) {
   bogo.on('reply', function (event) {
     ws.send(JSON.stringify(event));
   });
+
+  return bogo;
 };
 
 },{"events":2}],2:[function(require,module,exports){

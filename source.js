@@ -20,4 +20,5 @@ module.exports = function({port=8081}){
     ws.send(JSON.stringify(event));
   });
 
+  return bogo;
 }
