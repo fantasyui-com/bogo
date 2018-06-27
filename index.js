@@ -1,6 +1,6 @@
 const EventEmitter = require('events');
 
-module.exports = function({port=8081}){
+module.exports = function({port=8081, debug=false}){
 
   // Browser Code
   const host = window.document.location.host.replace(/:.*/, '');
@@ -13,14 +13,20 @@ module.exports = function({port=8081}){
   bogo.emit('socket', ws);
 
   // Bogo Core
+  // Bogo Core
+  // given object {name: xxx, data: yyy}
+  // bogo is captured by bogo.on('xxx', function(yyy){})
   ws.onmessage = function (raw) {
     const {name, data} = JSON.parse(raw.data);
+    if(debug) console.log( 'bogo.emit("%s", %s)', name, JSON.stringify(object) );
     bogo.emit(name, data);
   };
+
   // Bogo Core
   ws.onerror = function (e) {
     bogo.emit('error', e);
   };
+
   ws.onclose = function (code,error) {
     bogo.emit('close', {code,error});
   };
