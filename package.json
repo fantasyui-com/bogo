@@ -23,6 +23,6 @@
     "babelify": "^8.0.0"
   },
   "dependencies": {
-    "retry-again": "^1.8.0"
+    "retry-again": "^1.9.0"
   }
 }
