@@ -1,6 +1,6 @@
 {
   "name": "bogo",
-  "version": "1.16.0",
+  "version": "1.17.0",
   "description": "Event Emitter wrapper for Web Sockets",
   "main": "index.js",
   "scripts": {
