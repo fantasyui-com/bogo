@@ -4,14 +4,15 @@
   "description": "Event Emitter wrapper for Web Sockets",
   "main": "index.js",
   "scripts": {
-    "build": "browserify --standalone bogo -e index.js -t babelify -o browser.js"
+    "build": "browserify --standalone bogo -e index.js -t babelify -o browser.js",
+    "save": "git add .; git commit -m 'New Release'; git push; npm version patch; npm publish; git push;"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fantasyui-com/bogo.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "fantasyui.com <fantasyui.com@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/fantasyui-com/bogo/issues"
